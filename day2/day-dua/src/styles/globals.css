@@ -1,0 +1,161 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+nav {
+    background-color: #222;
+    padding: 15px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 15px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+.container {
+    max-width: 800px;
+    margin: 40px auto;
+    background: #fff;
+    padding: 30px;
+    border-radius: 8px;
+}
+
+h1 {
+    margin-bottom: 15px;
+}
+
+p {
+    line-height: 1.6;
+}
+
+form input,
+form textarea,
+form button {
+    width: 100%;
+    margin-top: 10px;
+    padding: 10px;
+}
+
+form button {
+    background-color: #222;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #444;
+}
+
+/* LOGIN PAGE */
+.login-container {
+    max-width: 400px;
+    margin: 80px auto;
+    background: #fff;
+    padding: 30px;
+    border-radius: 8px;
+}
+
+.login-container h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.login-container input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.login-container button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 20px;
+    background-color: #222;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.login-container button:hover {
+    background-color: #444;
+}
+
+.login-container p {
+    text-align: center;
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+/* =========================
+   DASHBOARD
+========================= */
+
+.dashboard {
+    display: flex;
+    min-height: 100vh;
+}
+
+/* SIDEBAR */
+.dashboard-sidebar {
+    width: 220px;
+    background-color: #222;
+    color: #fff;
+    padding: 20px;
+}
+
+.dashboard-sidebar h2 {
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+
+.dashboard-sidebar a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    margin-bottom: 10px;
+}
+
+.dashboard-sidebar a:hover {
+    text-decoration: underline;
+}
+
+/* MAIN CONTENT */
+.dashboard-main {
+    flex: 1;
+    background-color: #f4f4f4;
+    padding: 30px;
+}
+
+.dashboard-header {
+    background: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 6px;
+}
+
+.dashboard-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 20px;
+}
+
+.dashboard-card {
+    background: #fff;
+    padding: 20px;
+    border-radius: 6px;
+}
