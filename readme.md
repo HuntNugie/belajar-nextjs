@@ -37,3 +37,26 @@ export default function Layouting(props:layoutProps){
 
 # untuk import alias
 di dalam next js jika kita ingin navigasi import file itu bisa dengan mudah tanpa perlu ../ untuk keluar, kita bisa menggunakan @ didepan path file yang kita mau import itu kalau saya tebak itu relative folder src 
+
+# hari ketiga saya belajar next js
+
+## ada berbagai macam dyanamic routing 
+
+### [...slug].tsx
+jika ingin menggunakna banyak slug di belakang nya dan di dalam nya bisa di menggunakan hooks useRouter dan properti query 
+
+## ada berbagai macam navigasi di next js
+dalam tingkat komponent untuk mengganti navigasi jadul kita bisa gunakan 
+```tsx
+import Link from "next/link"
+<Link href="/">pindah</Link>
+```
+
+dalam tingkat fungsi untuk redirect maka bisa menggunakan 
+```tsx
+import {useRouter} from "next/router"
+
+const {push} = useRouter();
+
+push("/");
+```
